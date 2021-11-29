@@ -2,14 +2,9 @@
 // You can see where this file is connected to your HTML in the index.html on line 14
 
 
-function sayHey(){
-    console.log("Hey!");
+function futureAge(name, currentAge) {
+var futureAge = currentAge + 5
+return (name + " you will be " + futureAge)
 }
 
-function conversation(){
-    sayHey();
-    console.log("How are you?");
-    console.log("Goodbye");
-}
-
-conversation();
+console.log(futureAge("Lemuela", 25));
