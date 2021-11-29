@@ -2,18 +2,14 @@
 // You can see where this file is connected to your HTML in the index.html on line 14
 
 
-let a = 5;
-const b = 10;
-let c = a + b;
+function sayHey(){
+    console.log("Hey!");
+}
 
-console.log(c);
+function conversation(){
+    sayHey();
+    console.log("How are you?");
+    console.log("Goodbye");
+}
 
-a = 20;
-
-console.log('after a has been updated' + c);
-
-c = a + b;
-
-console.log('after a has been updated with the new a value' + c);
-
-console.log(c);
+conversation();
