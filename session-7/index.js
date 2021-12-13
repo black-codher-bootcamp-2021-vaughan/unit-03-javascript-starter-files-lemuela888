@@ -47,6 +47,12 @@ const people = [
   { name: 'killmonger', age: 32 },
 ];
 
+people.sort(compare)
+
+const noAge = people.map((person) => {return person.name});
+
+console.log(noAge, people);
+
 // This is a helper function that should be used in the final task of the session.
 // You should pass this function to the sort method to sort the ages of each individiual in the people array of objects
 // Note: this helper function is using a tertiary operator instead of an if/else statement
@@ -54,5 +60,5 @@ function compare(a, b) {
   const personA = a.age;
   const personB = b.age;
 
-  return personA > personB ? true : false;
+  return personA > personB ? 1 : -1;
 }
