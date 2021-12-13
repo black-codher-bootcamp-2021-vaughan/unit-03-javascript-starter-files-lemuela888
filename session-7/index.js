@@ -33,7 +33,7 @@ const Jodye = names[8];
 const Milan = names[9];
 const Beau = names[10];
 
-names.sort();
+names.sort().reverse();
 
 console.log(names);
 
